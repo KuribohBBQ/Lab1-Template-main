@@ -495,6 +495,7 @@ class CrystalSearchWizard(WizardSearchAgent):
         #pop item with highest priority in search_pq
         priority, curr_searchState = heapq.heappop(self.search_pq)
 
+        
         if self.is_crystal(curr_searchState):
             self.plan = self.paths[curr_searchState][1]
             return None
